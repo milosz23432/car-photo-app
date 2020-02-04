@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
+    body {margin:25px;}
+h1 {
+    font-size: 30px;
+    border-style: dotted;
+    border-color: darkgreen;
+    border-width: 10px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    color: crimson;
+    font-family: 'Lobster Two', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 10px 10px 10px 10px;
+}
+
+h1 {
+    text-align: center;
+}
+#first-line {
+    text-align: center;
+}
+.fast {
+    color: rgb(240, 48, 48);
+    font-size: large;
+    font-style: italic;
+}
+#pytanie {
+    text-align: center;
+}
+#feature-list {
+    text-align: left;
+    margin-left: 370px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+#pictures {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+div.polaroid {
+    width: 40%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 20px;
+  
+}
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+}
+#submit-car {
+    margin-left: 370px;
+}
+    </style>
+
+<head>
+<title>Car photo app</title>
+</head>
+<body>
+    <h1>
+        This is a car photo site
+    </h1>
+<p>
+    <div id="first-line">
+    <a href="https://auto.ndtv.com/photos" target="_blank"> Click here</a> to start browsing some <span class="fast">fast</span> cars!<br>
+    </div>
+    <div id="pytanie"> 
+
+        <!--Obrazek Aston Martin-->
+
+        <div class="polaroid" id="pictures">
+            <img src="https://www.autogen.pl/cars/_mini/AstonVulcan-662x333.jpg" alt="Aston Martin Vulcan"   
+            style="width:100%">
+            <div class="container">
+                <p>Aston Martin Vulcan</p>
+            </div>
+        </div>
+        <br>Do you like it?</img><br>
+    
+    <label for Yes>
+        <input id="Yes" value="Aston Yes" type="radio" name="yes-no" >Yes!
+    </label>
+    <label for No>
+        <input id="No" value="Aston No" type="radio" name="yes-no">No!
+    </label>
+
+    <!--Obrazek Alfa Romeo-->
+
+    <div class="polaroid" id="pictures">
+        <img src="https://forzaitalia.pl/wp-content/uploads/2018/01/2009-alfa-romeo-8c-competizione-06.jpg" alt="Alfa Romeo 8C Competizione"
+        style="width:100%">
+        <div class="container" id="pictures">
+            <p>Alfa Romeo 8C</p>
+        </div>
+    </div>
+        <br>Do you like it?</img><br>
+    
+    <label for Yes>
+        <input id="Yes" value="Alfa Yes" type="radio" name="Alfa yes-no" >Yes!
+    </label>
+    <label for No>
+        <input id="No" value="Alfa No" type="radio" name="Alfa yes-no">No!
+    </label>
+        </div>
+    </div>
+    </div>
+    <form action="/submit-your-dream-car">
+    <div id="feature-list">
+        What features in cars do you like the most?<br>
+        <label><input type="checkbox" name="Feature">High power </label><br>
+        <label><input type="checkbox" name="Feature">Economic </label><br>
+        <label><input type="checkbox" name="Feature">Luxurious </label><br>
+        <label><input type="checkbox" name="Feature">High-tech </label><br>
+        <label><input type="checkbox" name="Feature">Spacious </label><br>
+    </div>
+    <div>
+        <input type="text"
+        placeholder="Name your dream car" required id="submit-car">
+        <button type="submit">Submit</button>
+    </div>
+    </form>
+    
+</p>
+
+</body>
